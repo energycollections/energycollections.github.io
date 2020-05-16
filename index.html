@@ -22,7 +22,7 @@
     <div class="container-fluid">
       <div class="row">
           <div class="col">
-            <p>This page contains pointers to all the primary data we used to conduct our study, please refer to them below.</p>
+            <p>This page contains pointers to all the primary data we used to conduct our work, please refer to them below.</p>
           </div>
       </div>
 
@@ -34,17 +34,32 @@
       </div>
       <div class="row">
           <div class="col">
-            <p>The following archive contains the energy consumption data for all the pairs of device-benchmark we used in our experiments. For each device, there is a folder with its name, and the content of these folders are csv files with the benchmark's name at the beginning and either 'ORIGINAL' or 'MODIFIED' labels at the end of the file name.</p>
+            <p>The following archive contains the energy consumption data for all the pairs of device-benchmark we used in our experiments. For each device, there is a folder with its name, and the content of these folders are csv files with the benchmark's name at the beginning and either 'ORIGINAL' or 'MODIFIED' labels at the end of the file name. For our study on energy profiles we included the time spend executing the benchmarks</p>
             
-            <p style="display: inline; margin-right: 0.1em">Experiment results</p>
+            <p style="display: inline; margin-right: 0.1em">Experiment results from study on devices</p>
             <a href="experiment results.zip"><i class="fas fa-arrow-circle-down" style="font-size: 1.0em;"></i></a>
+            <p>
+            <p style="display: inline; margin-right: 0.1em">Experiment results from study on energy profiles</p>
+            <a href="experiment results asus.zip"><i class="fas fa-arrow-circle-down" style="font-size: 1.0em;"></i></a>
           </div>
       </div>
 
+	  <!-- Learning how to use -->
+      <div class="row" style="margin-top: 1em">
+          <div class="col">
+            <h3>2. How to use</h3>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+            <p>If you are a researcher or developer and want to learn how to use it, please feel free to our cookbook to guide step-by-step in the whole process of using CT+. You can download it <a href="cookbook.pdf">here</a>
+            </p>
+          </div>
+      </div>
       <!-- Benchmarks -->
       <div class="row" style="margin-top: 1em">
           <div class="col">
-            <h3>2. Benchmarks</h3>
+            <h3>3. Benchmarks</h3>
           </div>
       </div>
       <div class="row">
@@ -56,10 +71,15 @@
           <div class="col">
             <table class="table">
               <thead>
+              	<tr>
+                  <th>Software systems used on the study analzying different devices</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
                 <tr>
-                  <th>Benchmark</th>
+                  <th>Software System</th>
                   <th>Version</th>
-                  <th>Platform</th>
+                  <th>Environment</th>
                   <th>Source</th>
                 </tr>
               </thead>
@@ -141,10 +161,68 @@
           </div>
       </div>
 
+      <div class="row" style="margin-top: 3em">
+          <div class="col">
+            <table class="table">
+              <thead>
+              	<tr>
+                  <th>Software systems used on the study analzying different energy profiles</th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                <tr>
+                  <th>Software System</th>
+                  <th>Version</th>
+                  <th>Environment</th>
+                  <th>Source</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="https://github.com/energycollections/softwaresystems/tree/master/tomcat" target="_blank">Tomcat</a></td>
+                  <td>9.0.2</td>
+                  <td>Desktop</td>
+                  <td><a href="http://dacapobench.org/" target="_blank">DaCapo Benchmark Suite</a> (19.07)</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/energycollections/softwaresystems/tree/master/biojava" target="_blank">Biojava</a></td>
+                  <td>5.1.1</td>
+                  <td>Desktop</td>
+                  <td><a href="http://dacapobench.org/" target="_blank">DaCapo Benchmark Suite</a> (19.07)</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/energycollections/softwaresystems/tree/master/cassandra" target="_blank">Cassandra</a></td>
+                  <td>3.11.5</td>
+                  <td>Desktop</td>
+                 <td><a href="http://dacapobench.org/" target="_blank">DaCapo Benchmark Suite</a> (19.07)</td>
+                </tr>
+                <tr>
+                   <td><a href="https://github.com/energycollections/softwaresystems/tree/master/graphchi" target="_blank">Graphchi</a> </td>
+                 <td>0.2.2</td>
+                  <td>Desktop</td>
+                  <td><a href="http://dacapobench.org/" target="_blank">DaCapo Benchmark Suite</a> (19.07)</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/energycollections/softwaresystems/tree/master/kafka" target="_blank">Kafka</a> </td>
+                  <td>2.2.0-rc0</td>
+                  <td>Desktop</td>
+                  <td><a href="http://dacapobench.org/" target="_blank">DaCapo Benchmark Suite</a> (19.07)</td>
+                </tr>
+                <tr>
+                  <td><a href="https://github.com/energycollections/softwaresystems/tree/master/zxing" target="_blank">Zxing</a></td>
+                  <td>3.3.4</td>
+                  <td>Desktop</td>
+                  <td><a href="http://dacapobench.org/" target="_blank">DaCapo Benchmark Suite</a> (19.07)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+      </div>
+
       <!-- CT+ -->
       <div class="row">
           <div class="col">
-            <h3>3. CT+ modules</h3>
+            <h3>4. CT+ modules</h3>
           </div>
       </div>
       <div class="row">
@@ -176,10 +254,27 @@
           </div>
       </div>
 
+	<!-- CT+ -->
+      <div class="row">
+          <div class="col">
+            <h3>5. Others</h3>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col">
+            <ul>
+             <li><a href="https://drive.google.com/file/d/1cgQ1O4YA7rj1BEwmMdrPPGoypv2SsWXO/view?usp=sharing" target="_blank">Dacapo used</a></li>
+			<li><a href="cookbook.pdf">Cookbook</a></li>
+		  </div>
+      </div>
+
+
+
+
       <!-- Authors -->
       <div class="row">
           <div class="col">
-            <h3>4. Authors</h3>
+            <h3>6. Authors</h3>
           </div>
       </div>
       <div class="row">
@@ -188,8 +283,9 @@
               <li>Wellington Oliveira (woj@cin.ufpe.br)</li>
               <li>Renato Oliveira (ros3@cin.ufpe.br)</li>
               <li><a href="https://sites.google.com/a/cin.ufpe.br/castor/" target="_blank">Fernando Castor</a> (castor@cin.ufpe.br)</li>
-              <li>Benito Fernandes (jbfan@cin.ufpe.br)</li>
               <li><a href="http://gustavopinto.org/" target="_blank">Gustavo Pinto</a> (gpinto@ufpa.br)</li>
+              <li><a href="https://eden.dei.uc.pt/~jpf/Site/Home.html" target="_blank">João Paulo Fernandes</a> (jpf@dei.uc.pt)</li>
+              <!--li>Benito Fernandes (jbfan@cin.ufpe.br)</li-->
             </ul>
           </div>
       </div>
